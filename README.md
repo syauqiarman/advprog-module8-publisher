@@ -22,3 +22,8 @@ Bukti console screen dan RabbitMQ:
 ![alt text](image-1.png)
 
 Setelah melakukan run di subscriber dan publisher, maka data dari publisher akan dikirim ke message queue yang ada, setelah itu subscriber akan menerima data dari message queue tersebut dan ditampilkan seperti bukti diatas.
+
+Bukti browser capture untuk monitoring chart berdasarkan publisher:
+![alt text](image-2.png)
+
+Berdasarkan bukti yang terlampir diatas, terdapat peningkatan message rates di waktu tertentu yang dilihat dari spikenya. Peningkatan message rates tersebut dapat terjadi karena ketika melakukan run yang berulang pada publisher yang berupa pengiriman message, maka message rates di RabbitMQ akan meningkat berdasarkan message queue nya.
